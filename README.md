@@ -1,7 +1,7 @@
 Role Name
 =========
 
-This role installs MySQL on Ubuntu systems with a default database admin and user root with all privileges on localhost the password can be found in the vars directory.
+This role installs MySQL on Debian/Ubuntu systems with a default database admin and user root with all privileges on localhost the password can be found in the vars directory.
 
 Requirements
 ------------
