@@ -1,0 +1,22 @@
+---
+# tasks file for mysql
+
+    - name: Install MySQL
+      apt:
+        name: mysql-server
+        state: present
+
+    - name: Start Mysql Service
+      service:
+          name: mysql
+          state: started
+          enabled: yes
+
+    - name: install required python MySQLdb lib to create databases and users
+      apt: name=python-mysqldb  state=present
+
+    - name: Create Application Database
+      mysql_db: name={{ db_name }} state=present
+
+    - name: Create Application DB User
+      mysql_user: name={{ db_user }} password={{ db_password }} priv='*.*:ALL' host='localhost' state='present'
