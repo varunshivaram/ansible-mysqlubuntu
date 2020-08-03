@@ -1,7 +1,7 @@
 Role Name
 =========
 
-This role installs MySQL on Ubuntu systems with a default database admin and user root with all privileges on localhost the password can be found in the vars directory.
+This role installs MySQL on Debian/Ubuntu systems with a default database admin and user root with all privileges on localhost the password can be found in the vars directory.
 
 Requirements
 ------------
@@ -16,7 +16,7 @@ db_name , db_user and db_password
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+Including an example of how to use the role in ansible playbooks:
 
     - hosts: servers
       roles:
